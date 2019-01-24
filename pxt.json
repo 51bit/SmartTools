@@ -1,0 +1,15 @@
+{
+    "name": "smarttools",
+    "version": "0.1.0",
+    "description": "Smart tools for microbit",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/smarttools-strings.json"
+    ],
+    "public": true
+}

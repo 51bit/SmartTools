@@ -1,0 +1,8 @@
+{
+  "smarttools.intToString|block": "数字转字符串:%input",
+  "smarttools.stringToInt|block": "字符串转数字:%input",
+  "smarttools.round|block": "(round)四舍五入取整:%input",
+  "smarttools.roundUp2PositiveInfinity|block": "(ceil)往正无穷取整:%input",
+  "smarttools.roundDown2NegativeInfinity|block": "(floor)往负无穷取整:%input",
+  "smarttools.round2Zero|block": "(trunc)往0取整:%input"
+}
