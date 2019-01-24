@@ -81,4 +81,42 @@ namespace smarttools {
     export function whoisauthor(): void {
         return basic.showString("github.com/51bit");
     }
+
+    /**
+     *  Convert hex to decimal.
+     */
+    //% blockId=smarttools_hex2Dec block="Convert hex to decimal:%hex_num" blockExternalInputs=false
+    //% weight=71
+    //% group="Hex Convertor"
+    export function hex2Dec(hex_num: string): number {
+        return parseInt(hex_num);
+    }
+
+    /**
+     *  Convert decimal to hex.
+     */
+    //% blockId=smarttools_dec2Hex block="Convert decimal to hex:%dec_num" blockExternalInputs=false
+    //% weight=70
+    //% group="Hex Convertor"
+    export function dec2Hex(dec_num: number): string {
+        let dic: string = "0123456789ABCDEF";
+        let output: string = "";
+        let len: number = 0;
+
+        if (dec_num == 0) return "0x0";
+
+        let tmp: number = dec_num
+        for (; tmp; tmp >>= 4) {
+            len++;
+        }
+        if (len & 1) {
+            output = output + "0";
+        } 
+        for (len--; len >= 0; dec_num >>= 4, --len) {
+            let id = dec_num & 0xf
+            output = output + dic[id];
+        }
+
+        return "0x" + output;
+    }
 }
