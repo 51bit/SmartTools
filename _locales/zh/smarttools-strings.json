@@ -1,4 +1,5 @@
 {
+  "smarttools|block": "智能工具箱",
   "smarttools.intToString|block": "数字转字符串:%input",
   "smarttools.stringToInt|block": "字符串转数字:%input",
   "smarttools.round|block": "(round)四舍五入取整:%input",
