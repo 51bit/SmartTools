@@ -71,4 +71,14 @@ namespace smarttools {
     export function round2Zero(input: number): number {
         return Math.trunc(input);
     }
+
+    /**
+     * Author.
+     */
+    //% blockId=smarttools_whoisauthor block="Who is author" blockExternalInputs=false
+    //% weight=80
+    //% group="Author"
+    export function whoisauthor(): void {
+        return basic.showString("github.com/51bit");
+    }
 }
