@@ -44,6 +44,10 @@ Use ``||roundDown2NegativeInfinity||`` to convert decimal to int with round down
 
 Use ``||round2Zero||`` to convert decimal to int with round to zero. 
 
+Use ``||hex2Dec||`` to convert hex to decimal with round to zero. 
+
+Use ``||dec2Hex||`` to convert decimal to hex with round to zero. 
+
 ## Demo
 
 ![Alt text](https://github.com/51bit/SmartTools/raw/master/smarttools.png?raw=true "Smart Tools makecode program screenshot")
