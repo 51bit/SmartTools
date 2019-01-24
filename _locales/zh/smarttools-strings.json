@@ -6,8 +6,8 @@
   "smarttools.roundDown2NegativeInfinity|block": "(floor)往负无穷取整:%input",
   "smarttools.round2Zero|block": "(trunc)往0取整:%input",
   "smarttools.hex2Dec|block": "十六进制转十进制:%hex_num",
-  "smarttools.dec2Hex|block": "%a÷%b（整数版）",
-  "smarttools.intDiv|block": "%a÷%b的余数（整数版）",
-  "smarttools.intRemainder|block": "十进制转十六进制:%dec_num",
+  "smarttools.dec2Hex|block": "十进制转十六进制:%dec_num",
+  "smarttools.intDiv|block": "%a÷%b（整数版）",
+  "smarttools.intRemainder|block": "%a÷%b的余数（整数版）",
   "smarttools.whoisauthor|block": "作者是谁"
 }
