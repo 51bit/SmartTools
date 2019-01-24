@@ -32,9 +32,9 @@ basic.forever(function () {
 })
 ```
 
-Use ``||intToString||`` to init SFC NES Gamepad.
+Use ``||intToString||`` to convert int to string (removing fractions).
 
-Use ``||stringToInt||`` to cache the pressed key list.
+Use ``||stringToInt||`` to convert string to int (removing fractions).
 
 Use ``||round||`` to convert decimal to int with round. 
 
