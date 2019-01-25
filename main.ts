@@ -156,4 +156,46 @@ namespace smarttools {
     export function intRemainder(a: number, b: number): number {
         return Math.trunc(a % b);
     }
+    
+    /**
+     *  Div for integer with fraction.
+     *  @param a the divisor
+     *  @param b the dividend
+     *  @param f the fraction number
+     */
+    //% blockId=smarttools_intDivWithFraction block="Div:%a÷%b with %f decimal places" blockExternalInputs=false
+    //% weight=59 blockGap=8
+    //% group="Integer Math"
+    //% f.min=0 f.max=16
+    //% f.fieldOptions.precision=1 
+    //% inlineInputMode=inline
+    export function divWithFraction(a: number, b: number, f: number): string {
+        let stra = '' + a / b
+        let strb = ''
+        let n = f
+        if (n >= 16) strb = stra
+        else {
+            if (stra.indexOf('.') != -1) {
+                if (n == 0) {
+                    strb = '' + round(a / b)
+                }
+                else {
+                    let end = stra.indexOf('.') + 1 + n
+                    if (parseInt(stra.charAt(end)) >= 5) {
+                        let lastbit = parseInt(stra.charAt(end - 1)) + 1
+                        strb = stra.substr(0, end - 1)
+                        strb = strb + ('' + lastbit)
+                    }
+                    strb = stra.substr(0, end)
+                }
+            }
+            else {
+                strb = stra + '.'
+                for (let i = 0; i < n; i++) {
+                    strb = strb + '0'
+                }
+            }
+        }
+        return strb;
+    }
 }
