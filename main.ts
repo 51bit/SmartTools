@@ -201,7 +201,7 @@ namespace smarttools {
         else {
             if (stra.indexOf('.') != -1) {
                 if (n == 0) {
-                    strb = '' + round(a / b)
+                    strb = '' + Math.round(a / b)
                 }
                 else {
                     let end = stra.indexOf('.') + 1 + n
@@ -210,7 +210,10 @@ namespace smarttools {
                         strb = stra.substr(0, end - 1)
                         strb = strb + ('' + lastbit)
                     }
-                    strb = stra.substr(0, end)
+                    else
+                    {
+                        strb = stra.substr(0, end)
+                    }
                 }
             }
             else {
