@@ -214,6 +214,9 @@ namespace smarttools {
                     {
                         strb = stra.substr(0, end)
                     }
+                    for (let i = 0; i < n - (strb.length - 1 - stra.indexOf('.')); i++) {
+                        strb = strb + '0'
+                    }
                 }
             }
             else {
