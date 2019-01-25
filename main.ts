@@ -31,6 +31,30 @@ namespace smarttools {
     }
 
     /**
+     * Convert decimal to string(keep fractions)
+     * @param input the decimal to be converted to string
+     */
+    //% blockId=smarttools_decimalToString block="Convert decimal:%input to string(keep fractions)" blockExternalInputs=false
+    //% weight=98 blockGap=8
+    //% group="Integer suite"
+    //% inlineInputMode=inline
+    export function decimalToString(input: number): string {
+        return '' + input;
+    }
+
+    /**
+     * Convert string to int(keep fractions)
+     * @param input the string to be converted to decimal
+     */
+    //% blockId=smarttools_stringToDecimal block="Convert string:%input to decimal(keep fractions)" blockExternalInputs=false
+    //% weight=97 blockGap=8
+    //% group="Integer suite"
+    //% inlineInputMode=inline
+    export function stringToDecimal(input: string): number {
+        return parseFloat(input);
+    }
+
+    /**
      * Convert decimal to int with rule: removes decimal fractions smaller than 0.5 and counting all others, including 0.5, as 1
      * @param input the decimal to be converted to int
      */
