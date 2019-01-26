@@ -156,11 +156,11 @@ namespace smarttools {
     }
 
     /**
-     *  Div for integer.
+     *  Div for integer, it is diff with idiv and only convert the result to integer without converting inputs.
      *  @param a the divisor
      *  @param b the dividend
      */
-    //% blockId=smarttools_intDiv block="IntDiv:%a÷%b" blockExternalInputs=false
+    //% blockId=smarttools_intDiv block="Integer result of (%a÷%b)" blockExternalInputs=false
     //% weight=61 blockGap=8
     //% group="Integer Math"
     //% inlineInputMode=inline
@@ -169,11 +169,11 @@ namespace smarttools {
     }
 
     /**
-     *  Remainder for integer.
+     *  Remainder for integer, it only convert the result to integer without converting inputs.
      *  @param a the divisor
      *  @param b the dividend
      */
-    //% blockId=smarttools_intRemainder block="IntRemainder of%a÷%b" blockExternalInputs=false
+    //% blockId=smarttools_intRemainder block="Integer result of (%a÷%b)" blockExternalInputs=false
     //% weight=60 blockGap=8
     //% group="Integer Math"
     //% inlineInputMode=inline
