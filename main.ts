@@ -173,7 +173,7 @@ namespace smarttools {
      *  @param a the divisor
      *  @param b the dividend
      */
-    //% blockId=smarttools_intRemainder block="Integer result of (%a÷%b)" blockExternalInputs=false
+    //% blockId=smarttools_intRemainder block="Integer result of remainder of (%a÷%b)" blockExternalInputs=false
     //% weight=60 blockGap=8
     //% group="Integer Math"
     //% inlineInputMode=inline
