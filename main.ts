@@ -122,7 +122,17 @@ namespace smarttools {
     //% group="Hex Convertor"
     //% inlineInputMode=inline
     export function hex2Dec(hex_num: string): number {
-        return parseInt(hex_num);
+        let dec_num = 0;
+        let hex_arr = "0123456789abcdef";
+        for (let index = 0; index <= hex_num.length - 1; index++) {
+            let char = hex_num.charAt(hex_num.length - 1 - index);
+            for (let index2 = 0; index2 <= 15; index2++) {
+                if (char.compare(hex_arr.charAt(index2)) == 0) {
+                    dec_num = dec_num + index2 * Math.pow(16, index);
+                }
+            }
+        }
+        return dec_num;
     }
 
     /**
