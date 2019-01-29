@@ -197,7 +197,7 @@ namespace smarttools {
      *  @param b the dividend
      *  @param f the fraction number
      */
-    //% blockId=smarttools_intDivWithFraction block="Div:%a÷%b with %f decimal places(return string)" blockExternalInputs=false
+    //% blockId=smarttools_intDivWithFractionString block="Div:%a÷%b with %f decimal places(return string)" blockExternalInputs=false
     //% weight=59 blockGap=8
     //% group="Integer Math"
     //% f.min=0 f.max=16
