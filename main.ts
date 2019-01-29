@@ -203,7 +203,7 @@ namespace smarttools {
     //% f.min=0 f.max=16
     //% f.fieldOptions.precision=1 
     //% inlineInputMode=inline
-    export function divWithFraction(a: number, b: number, f: number): string {
+    export function divWithFraction(a: number, b: number, f: number): number {
         let stra = '' + a / b
         let strb = ''
         let n = f
@@ -237,6 +237,6 @@ namespace smarttools {
                 }
             }
         }
-        return strb;
+        return parseFloat(strb);
     }
 }
