@@ -12,6 +12,7 @@
   "smarttools.dec2Hex|block": "十进制转十六进制:%dec_num",
   "smarttools.intDiv|block": "%a÷%b（整数版）",
   "smarttools.intRemainder|block": "%a÷%b的余数（整数版）",
-  "smarttools.divWithFraction|block": "%a÷%b保留%f位小数",
+  "smarttools.divWithFractionString|block": "%a÷%b保留%f位小数（返回字符串）",
+  "smarttools.divWithFraction|block": "%a÷%b保留%f位小数（返回数字）",
   "smarttools.whoisauthor|block": "作者是谁"
 }
