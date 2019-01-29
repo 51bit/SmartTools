@@ -192,7 +192,7 @@ namespace smarttools {
     }
     
     /**
-     *  Div for integer with fraction.
+     *  Div for decimal with specified number of fractions.
      *  @param a the divisor
      *  @param b the dividend
      *  @param f the fraction number
