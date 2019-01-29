@@ -192,18 +192,18 @@ namespace smarttools {
     }
     
     /**
-     *  Div for decimal with specified number of fractions.
+     *  Div for decimal with specified number of fractions.(return string)
      *  @param a the divisor
      *  @param b the dividend
      *  @param f the fraction number
      */
-    //% blockId=smarttools_intDivWithFraction block="Div:%a÷%b with %f decimal places" blockExternalInputs=false
+    //% blockId=smarttools_intDivWithFraction block="Div:%a÷%b with %f decimal places(return string)" blockExternalInputs=false
     //% weight=59 blockGap=8
     //% group="Integer Math"
     //% f.min=0 f.max=16
     //% f.fieldOptions.precision=1 
     //% inlineInputMode=inline
-    export function divWithFraction(a: number, b: number, f: number): number {
+    export function divWithFractionString(a: number, b: number, f: number): string {
         let stra = '' + a / b
         let strb = ''
         let n = f
@@ -237,6 +237,22 @@ namespace smarttools {
                 }
             }
         }
-        return parseFloat(strb);
+        return strb;
+    }
+    
+    /**
+     *  Div for decimal with specified number of fractions.(return number)
+     *  @param a the divisor
+     *  @param b the dividend
+     *  @param f the fraction number
+     */
+    //% blockId=smarttools_intDivWithFraction block="Div:%a÷%b with %f decimal places(return number)" blockExternalInputs=false
+    //% weight=58 blockGap=8
+    //% group="Integer Math"
+    //% f.min=0 f.max=16
+    //% f.fieldOptions.precision=1 
+    //% inlineInputMode=inline
+    export function divWithFraction(a: number, b: number, f: number): number {
+        return parseFloat(divWithFractionString(a,b,f));
     }
 }
