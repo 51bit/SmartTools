@@ -1,7 +1,7 @@
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(smarttools.intDiv(5, 2))
     basic.showNumber(smarttools.intRemainder(5, 2))
-    basic.showString(smarttools.divWithFraction(8, 7, 1))
+    basic.showNumber(smarttools.divWithFraction(8, 7, 1))
 })
 input.onButtonPressed(Button.AB, function () {
     smarttools.whoisauthor()
