@@ -1,6 +1,6 @@
 {
     "name": "smarttools",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "description": "Smart tools for microbit",
     "license": "MIT",
     "dependencies": {
