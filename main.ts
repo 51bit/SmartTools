@@ -154,14 +154,12 @@ namespace smarttools {
         for (; tmp; tmp >>= 4) {
             len++;
         }
-        if (len & 1) {
-            output = output + "0";
-        }
+        let tempLen: number = len
         for (len--; len >= 0; dec_num >>= 4, --len) {
-            let id = dec_num & 0xf
-            output = output + dic[id];
+            let id = (dec_num%16) & 0xf
+            output = dic[id] +output;
         }
-
+        if (tempLen == 1 || tempLen == 3) output = "0" + output;
         return "0x" + output;
     }
 
